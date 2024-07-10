@@ -2,17 +2,10 @@
   "inputs": [
     {
 		"name": "prefix",
-		"required": false,
+		"required": true,
 		"type": "string",
 		"hidden": false,
 		"default": "devsecops"
-    },
-    {
-		"name": "use_existing_resource_group",
-		"required": false,
-		"type": "string",
-		"hidden": false,
-		"default": ""
     },
     {
 		"name": "region",
@@ -50,35 +43,7 @@
 		"default": ""
 	},
 	{
-		"name": "sm_secret_group",
-		"required": true,
-		"type": "string",
-		"hidden": false,
-		"default": ""
-	},
-	{
-		"name": "sm_resource_group",
-		"required": true,
-		"type": "string",
-		"hidden": false,
-		"default": ""
-	},
-	{
-		"name": "sm_name",
-		"required": true,
-		"type": "string",
-		"hidden": false,
-		"default": ""
-	},
-	{
-		"name": "sm_location",
-		"required": true,
-		"type": "string",
-		"hidden": false,
-		"default": ""
-	},
-	{
-		"name": "sm_location",
+		"name": "registry_namespace",
 		"required": true,
 		"type": "string",
 		"hidden": false,
@@ -125,20 +90,8 @@
 				"value": "ref:../../inputs/resource_group_name"
 			},
 			{
-				"name": "sm_secret_group",
-				"value":  "ref:../../inputs/sm_secret_group"
-			},
-			{
-				"name": "sm_resource_group",
-				"value":  "ref:../../inputs/sm_resource_group"
-			},
-			{
-				"name": "sm_name",
-				"value":  "ref:../../inputs/sm_name"
-			},
-			{
-				"name": "sm_location",
-				"value":  "ref:../../inputs/sm_location"
+				"name": "enable_secrets_manager",
+				"value":  false
 			},
 			{
 				"name": "registry_namespace",
