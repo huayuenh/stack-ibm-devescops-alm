@@ -109,84 +109,6 @@
 							"default_value": "devsecops",
 							"description": "Default prefix for repos and resources",
 							"required": false
-						},
-						{
-							"key": "sm_service_plan",
-							"type": "string",
-							"default_value": "standard",
-							"description": "The pricing plan to use for Secrets Manager.",
-							"required": false,
-							"options": [
-								{
-									"displayname": "standard",
-									"value": "standard"
-								},
-								{
-									"displayname": "trial",
-									"value": "trial"
-								}
-							]
-						},
-						{
-							"key": "scc_service_plan",
-							"type": "string",
-							"default_value": "security-compliance-center-standard-plan",
-							"description": "The pricing plan to use for the IBM Cloud Security and Compliance Center.",
-							"required": false,
-							"options": [
-								{
-									"displayname": "standard",
-									"value": "security-compliance-center-standard-plan"
-								},
-								{
-									"displayname": "trial",
-									"value": "security-compliance-center-trial-plan"
-								}
-							]
-						},
-						{
-							"key": "scc-region",
-							"type": "string",
-							"default_value": "us-south",
-							"description": "The region in which all resources are deployed except SCC and Event Notifications which default to us-south but can do change in optional properties.",
-							"display_name": "Region",
-							"required": false,
-							"custom_config": {
-								"type": "region",
-								"grouping": "deployment",
-								"original_grouping": "deployment",
-								"config_constraints": {
-									"filterString": "id:ca-tor,eu-es,eu-de,eu-fr2,us-south",
-									"showKinds": [
-										"region",
-										"zone",
-										"dc",
-										"location"
-									]
-								}
-							}
-						},
-						{
-							"key": "en_region",
-							"type": "string",
-							"default_value": "us-south",
-							"description": "The region in which all resources are deployed except SCC and Event Notifications which default to us-south but can do change in optional properties.",
-							"display_name": "Region",
-							"required": false,
-							"custom_config": {
-								"type": "region",
-								"grouping": "deployment",
-								"original_grouping": "deployment",
-								"config_constraints": {
-									"filterString": "id:eu-gb,au-syd,eu-es,eu-de,eu-fr2,us-south",
-									"showKinds": [
-										"region",
-										"zone",
-										"dc",
-										"location"
-									]
-								}
-							}
 						}
 					],
 					"outputs": [
@@ -201,6 +123,14 @@
 						{
 							"key": "compliance-cc-url",
 							"description": "The URL to the Continuous Compliance toolchain for the sample application."
+						},
+						{
+							"key": "cos_bucket_name",
+							"description": "The generated COS bucket name"
+						},
+						{
+							"key": "s3_endpoint_direct",
+							"description": "s3_endpoint_direct"
 						}
 					],
 					"install_type": "fullstack"
