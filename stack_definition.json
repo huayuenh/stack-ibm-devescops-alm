@@ -124,6 +124,14 @@
 		{
 			"name": "s3_endpoint_direct",
 			"value": "ref:./members/2 - alm/outputs/s3_endpoint_direct"
+		},
+		{
+			"name": "bucket",
+			"value": "ref:./members/2 - alm/outputs/bucket"
+		},
+		{
+			"name": "processed_buckets",
+			"value": "ref:./members/2 - alm/outputs/processed_buckets"
 		}
 	  ]
 }
