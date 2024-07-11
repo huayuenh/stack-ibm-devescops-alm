@@ -75,7 +75,7 @@
 	},
 	{
 		"name": "2 - alm",
-		"version_locator": "ab299e44-b778-45a7-a795-75fdeee8ab8d.023e025e-abcd-48b7-983e-870405296a42",
+		"version_locator": "ab299e44-b778-45a7-a795-75fdeee8ab8d.d7d1e8bb-9028-4e7f-a568-8954f8ab2942",
 		"inputs": [
 			{
 				"name": "ibmcloud_api_key",
