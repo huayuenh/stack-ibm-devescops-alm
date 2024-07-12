@@ -75,7 +75,7 @@
 	},
 	{
 		"name": "2 - alm",
-		"version_locator": "ab299e44-b778-45a7-a795-75fdeee8ab8d.f764d227-712d-4bd9-a556-f762397efcfe",
+		"version_locator": "ab299e44-b778-45a7-a795-75fdeee8ab8d.cd841654-6251-4cc7-8c09-d0111530d11f",
 		"inputs": [
 			{
 				"name": "ibmcloud_api_key",
@@ -160,6 +160,22 @@
 		{
 			"name": "cos_da_input3",
 			"value": "ref:./members/2 - alm/outputs/cos_da_input3"
+		},
+		{
+			"name": "processed_buckets2",
+			"value": "ref:./members/2 - alm/outputs/processed_buckets2"
+		},
+		{
+			"name": "processed_buckets3",
+			"value": "ref:./members/2 - alm/outputs/processed_buckets3"
+		},
+		{
+			"name": "processed_buckets4",
+			"value": "ref:./members/2 - alm/outputs/processed_buckets4"
+		},
+		{
+			"name": "processed_buckets5",
+			"value": "ref:./members/2 - alm/outputs/processed_buckets5"
 		}
 	  ]
 }
