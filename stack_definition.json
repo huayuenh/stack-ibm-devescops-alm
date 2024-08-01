@@ -168,12 +168,12 @@
 				"value": "ref:../../members/1b - core-security-service-cos/outputs/cos_instance_id"
 				},
 				{
-				"name": "skip_cos_kms_auth_policy",
-				"value": true
-				},
-				{
 					"name": "kms_endpoint_url",
 					"value": "ref:../../members/1 - core-security-services-kms/outputs/kms_private_endpoint"
+				},
+				{
+					"name": "skip_cos_kms_auth_policy",
+					"value": true
 				},
 				{
 					"name": "existing_kms_instance_crn",
@@ -295,7 +295,7 @@
 				},
 				{
 					"name": "skip_cos_kms_auth_policy",
-					"value": "false"
+					"value": true
 				},
 				{
 					"name": "scc_service_plan",
