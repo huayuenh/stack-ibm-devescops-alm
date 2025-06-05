@@ -426,15 +426,11 @@
     {
       "inputs": [
         {
-          "name": "resource_group_name",
+          "name": "existing_resource_group_name",
           "value": "ref:../../members/1 - Key Management/outputs/resource_group_name"
         },
         {
-          "name": "existing_resource_group",
-          "value": true
-        },
-        {
-          "name": "cos_instance_name",
+          "name": "instance_name",
           "value": "core-services"
         },
         {
@@ -443,7 +439,7 @@
         }
       ],
       "name": "2 - Cloud Object Storage",
-      "version_locator": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3.321f6c6a-7511-47d1-830a-72506ea72190-global"
+      "version_locator": "7a4d68b4-cf8b-40cd-a3d1-f49aff526eb3.599b190b-8af0-4a88-9d3f-d4492132fc8d-global"
     },
     {
       "inputs": [
@@ -456,16 +452,12 @@
           "value": true
         },
         {
-          "name": "existing_cos_instance_id",
-          "value": "ref:../../members/2 - Cloud Object Storage/outputs/cos_instance_id"
+          "name": "existing_cos_instance_crn",
+          "value": "ref:../../members/2 - Cloud Object Storage/outputs/cos_instance_crn"
         },
         {
           "name": "existing_kms_instance_crn",
           "value": "ref:../../members/1 - Key Management/outputs/kms_instance_crn"
-        },
-        {
-          "name": "skip_iam_authorization_policy",
-          "value": false
         }
       ],
       "name": "3 - Cloud Object Bucket",
