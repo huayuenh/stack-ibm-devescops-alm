@@ -448,6 +448,10 @@
           "value": "ref:../../inputs/bucket_name"
         },
         {
+          "name": "prefix",
+          "value": "ref:../../inputs/prefix"
+        },
+        {
           "name": "add_bucket_name_suffix",
           "value": true
         },
